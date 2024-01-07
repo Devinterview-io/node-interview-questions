@@ -1,174 +1,799 @@
-<div data-v-5e9078c0=""><h1 data-v-5e9078c0="">
-      Top 95 Node.js interview
-      questions and answers in 2021.
-    </h1> <p data-v-5e9078c0="">
-      You can check all
-      95
-      Node.js interview questions here 👉
-      https://devinterview.io/dev/nodejs-interview-questions
-    </p> <br data-v-5e9078c0=""> <br data-v-5e9078c0=""> <div data-v-5e9078c0="" class="unit"><div><h2>🔹 1. What is npm?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p><code>npm</code> stands for Node Package Manager. npm provides following two main functionalities:</p><ul><li>Online repositories for node.js packages/modules which are searchable on <a href="http://search.nodejs.org">search.nodejs.org</a></li><li>Command line utility to install packages, do version management and dependency management of Node.js packages.</li></ul></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="http://www.tutorialspoint.com/nodejs/nodejs_interview_questions.htm" rel="noreferrer" target="_blank" title="What is npm? Interview Questions Source To Answer">tutorialspoint.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 2. What is Node.js?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p>Node.js is a web application framework built on Google Chrome's JavaScript Engine (V8 Engine).</p><p>Node.js comes with runtime environment on which a Javascript based script can be interpreted and executed (It is analogus to JVM to JAVA byte code). This runtime allows to execute a JavaScript code on any machine outside a browser. Because of this runtime of Node.js, JavaScript is now can be executed on server as well.</p><p><em>Node.js = Runtime Environment + JavaScript Library</em></p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="http://www.tutorialspoint.com/nodejs/nodejs_interview_questions.htm" rel="noreferrer" target="_blank" title="What is Node.js? Interview Questions Source To Answer">tutorialspoint.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 3. What are the two types of API functions in Node.js?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p>The two types of API functions in Node.js are: a) Asynchronous, non-blocking functions b) Synchronous, blocking functions</p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="http://www.lazyquestion.com/interview-questions-and-answer/nodejs" rel="noreferrer" target="_blank" title="What are the two types of API functions in Node.js?  Interview Questions Source To Answer">lazyquestion.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 4. What is an error-first callback?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p><em>Error-first callbacks</em> are used to pass errors and data. The first argument is always an error object that the programmer has to check if something went wrong. Additional arguments are used to pass data.</p><pre><code>fs<span class="token cBase">.</span><span class="token cMod">readFile</span><span class="token cBase">(</span>filePath<span class="token cBase">,</span> <span class="token cVar">function</span><span class="token cBase">(</span><span class="token parameter">err<span class="token cBase">,</span> data</span><span class="token cBase">)</span> <span class="token cBase">{</span>
-  <span class="token cVar">if</span> <span class="token cBase">(</span>err<span class="token cBase">)</span> <span class="token cBase">{</span>
-    <span class="token cComment">//handle the error</span>
-  <span class="token cBase">}</span>
-  <span class="token cComment">// use the data object</span>
-<span class="token cBase">}</span><span class="token cBase">)</span><span class="token cBase">;</span></code></pre></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="http://www.tutorialspoint.com/nodejs/nodejs_interview_questions.htm" rel="noreferrer" target="_blank" title="What is an error-first callback? Interview Questions Source To Answer">tutorialspoint.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 5. What is Callback Hell?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p>The asynchronous function requires callbacks as a return parameter. When multiple asynchronous functions are chained together then callback hell situation comes up. </p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://codeforgeek.com/2017/08/node-js-interview-questions-answers-updated/" rel="noreferrer" target="_blank" title="What is Callback Hell? Interview Questions Source To Answer">codeforgeek.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 6. What is control flow function?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p>It is a generic piece of code which runs in between several asynchronous function calls is known as control flow function.</p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="http://www.lazyquestion.com/interview-questions-and-answer/nodejs" rel="noreferrer" target="_blank" title="What is control flow function?   Interview Questions Source To Answer">lazyquestion.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 7. What are Event Listeners?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p><strong>Event Listeners</strong> are similar to call back functions but are associated with some event. For example when a server listens to http request on a given port a event will be generated and to specify http server has received and will invoke corresponding event listener. Basically, Event listener's are also call backs for a corresponding event.</p><p>Node.js has built in event's and built in event listeners. Node.js also provides functionality to create Custom events and Custom Event listeners.</p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="http://www.lazyquestion.com/interview-questions-and-answer/nodejs?page=3" rel="noreferrer" target="_blank" title="What are Event Listeners?   Interview Questions Source To Answer">lazyquestion.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 8. If Node.js is single threaded then how it handles concurrency?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p>Node provides a single thread to programmers so that code can be written easily and without bottleneck. Node internally uses multiple POSIX threads for various I/O operations such as File, DNS, Network calls etc.</p><p>When Node gets I/O request it creates or uses a thread to perform that I/O operation and once the operation is done, it pushes the result to the event queue. On each such event, event loop runs and checks the queue and if the execution stack of Node is empty then it adds the queue result to execution stack.</p><p>This is how Node manages concurrency.</p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://codeforgeek.com/2017/08/node-js-interview-questions-answers-updated/" rel="noreferrer" target="_blank" title="If Node.js is single threaded then how it handles concurrency? Interview Questions Source To Answer">codeforgeek.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 9. Could we run an external process with Node.js?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p>Yes. <em>Child process module</em> enables us to access operating system functionaries or other apps. Scalability is baked into Node and child processes are the key factors to scale our application. You can use child process to run system commands, read large files without blocking event loop,  decompose the application into various “nodes” (That’s why it’s called Node).</p><p>Child process module has following three major ways to create child processes –</p><ul><li>spawn  - child_process.spawn launches a new process with a given command.</li><li>exec  - child_process.exec method runs a command in a shell/console and buffers the output.</li><li>fork - The child_process.fork method is a special case of the spawn() to create child processes.</li></ul></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://codeforgeek.com/2017/08/node-js-interview-questions-answers-updated/" rel="noreferrer" target="_blank" title="Could we run an external process with Node.js? Interview Questions Source To Answer">codeforgeek.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 10. What are the key features of Node.js?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p>Let’s look at some of the key features of Node.js.</p><ul><li><strong>Asynchronous event driven IO helps concurrent request handling –</strong> All APIs of Node.js are asynchronous. This feature means that if a Node receives a request for some Input/Output operation, it will execute that operation in the background and continue with the&nbsp;processing of other requests. Thus it will not wait for the response from the previous requests.</li><li><strong>Fast in Code execution –</strong> Node.js uses the V8 JavaScript Runtime engine, the one which is used by Google Chrome. Node has a wrapper over the JavaScript engine which makes the runtime engine much faster and hence processing of requests within Node.js also become faster.</li><li><strong>Single Threaded but Highly Scalable –</strong> Node.js uses a single thread model for event looping. The response from these events may or may not reach the server immediately. However, this does not block other operations. Thus making Node.js highly scalable. Traditional servers create limited threads to handle requests while Node.js creates a single thread that provides service to much larger numbers of such requests.</li><li><strong>Node.js library uses JavaScript –</strong> This is another important aspect of Node.js from the developer’s point of view. The majority of developers are already well-versed in JavaScript. Hence, development in Node.js becomes easier for a developer who knows JavaScript.</li><li><strong>There is an Active and vibrant community for the Node.js framework –</strong> The active community always keeps the framework updated with the latest trends in the web development.</li><li><strong>No Buffering –</strong> Node.js applications never buffer any data. They simply output the data in chunks.</li></ul></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="http://www.techbeamers.com/top-30-node-js-interview-questions-answers/" rel="noreferrer" target="_blank" title="What are the key features of Node.js? Interview Questions Source To Answer">techbeamers.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 11. What is the difference between Nodejs, AJAX, and jQuery?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p>The one common trait between Node.js, AJAX, and jQuery is that all of them are the advanced implementation of JavaScript. However, they serve completely different purposes.</p><ul><li><p>Node.js –It is a server-side platform for developing client-server applications. For example, if we’ve to build an online employee management system, then we won’t do it using client-side JS. But the Node.js can certainly do it as it runs on a server similar to Apache, Django not in a browser.</p></li><li><p>AJAX (aka Asynchronous Javascript and XML) –It is a client-side scripting technique, primarily designed for rendering the contents of a page without refreshing it. There are a no. of large companies utilizing AJAX such as Facebook and Stack Overflow to display dynamic content.</p></li><li><p>jQuery –It is a famous JavaScript module which complements AJAX, DOM traversal, looping and so on. This library provides many useful functions to help in JavaScript development. However, it’s not mandatory to use it but as it also manages cross-browser compatibility, so can help you produce highly maintainable web applications.</p></li></ul></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="http://www.techbeamers.com/top-30-node-js-interview-questions-answers/" rel="noreferrer" target="_blank" title="What is the difference between Nodejs, AJAX, and jQuery? Interview Questions Source To Answer">techbeamers.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 12. What are the core modules of Node.js?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><ul><li>EventEmitter</li><li>Stream</li><li>FS</li><li>Net</li><li>Global Objects</li></ul></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://github.com/jimuyouyou/node-interview-questions" rel="noreferrer" target="_blank" title="What are the core modules of Node.js? Interview Questions Source To Answer">github.com/jimuyouyou</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 13. What is global installation of dependencies?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p>Globally installed packages/dependencies are stored in <strong><span><user-directory></user-directory></span></strong>/npm directory. Such dependencies can be used in CLI (Command Line Interface) function of any node.js but can not be imported using require() in Node application directly. To install a Node project globally use -g flag.</p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="http://www.tutorialspoint.com/nodejs/nodejs_interview_questions.htm" rel="noreferrer" target="_blank" title="What is global installation of dependencies? Interview Questions Source To Answer">tutorialspoint.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 14. What do you mean by Asynchronous API?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p>All APIs of Node.js library are aynchronous that is non-blocking. It essentially means a Node.js based server never waits for a API to return data. Server moves to next API after calling it and a notification mechanism of Events of Node.js helps server to get response from the previous API call.</p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="http://www.tutorialspoint.com/nodejs/nodejs_interview_questions.htm" rel="noreferrer" target="_blank" title="What do you mean by Asynchronous API? Interview Questions Source To Answer">tutorialspoint.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 15. What are the benefits of using Node.js?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p>Following are main benefits of using Node.js</p><ul><li><strong>Aynchronous and Event Driven</strong> - All APIs of Node.js library are aynchronous that is non-blocking. It essentially means a Node.js based server never waits for a API to return data. Server moves to next API after calling it and a notification mechanism of Events of Node.js helps server to get response from the previous API call.</li><li><strong>Very Fast</strong> - Being built on Google Chrome's V8 JavaScript Engine, Node.js library is very fast in code execution.</li><li><strong>Single Threaded but highly Scalable</strong> - Node.js uses a single threaded model with event looping. Event mechanism helps server to respond in a non-bloking ways and makes server highly scalable as opposed to traditional servers which create limited threads to handle requests. Node.js uses a single threaded program and same program can services much larger number of requests than traditional server like Apache HTTP Server.</li><li><strong>No Buffering</strong> - Node.js applications never buffer any data. These applications simply output the data in chunks.</li></ul></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="http://www.tutorialspoint.com/nodejs/nodejs_interview_questions.htm" rel="noreferrer" target="_blank" title="What are the benefits of using Node.js? Interview Questions Source To Answer">tutorialspoint.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 16. What is libuv?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p><strong>libuv</strong> is a C library that is used to abstract non-blocking I/O operations to a consistent interface across all supported platforms. It provides mechanisms to handle file system, DNS, network, child processes, pipes, signal handling, polling and streaming. It also includes a thread pool for offloading work for some things that can't be done asynchronously at the operating system level.</p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://nodejs.org/en/docs/meta/topics/dependencies/" rel="noreferrer" target="_blank" title="What is libuv? Interview Questions Source To Answer">nodejs.org</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 17. What is V8?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p>The V8 library provides Node.js with a JavaScript engine (a program that converts Javascript code into lower level or machine code that microprocessors can understand), which Node.js controls via the V8 C++ API. V8 is maintained by Google, for use in Chrome.</p><p>The Chrome V8 engine :</p><ul><li>The V8 engine is written in C++ and used in Chrome and Nodejs.</li><li>It implements ECMAScript as specified in ECMA-262.</li><li>The V8 engine can run standalone we can embed it with our own C++ program.</li></ul></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://nodejs.org/en/docs/meta/topics/dependencies/" rel="noreferrer" target="_blank" title="What is V8? Interview Questions Source To Answer">nodejs.org</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 18. What is the difference between returning a callback and just calling a callback?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><pre><code><span class="token cVar">return</span> <span class="token cMod">callback</span><span class="token cBase">(</span><span class="token cBase">)</span><span class="token cBase">;</span>
-<span class="token cComment">//some more lines of code; -  won't be executed</span>
+# 100 Must-Know Node.js Interview Questions
 
-<span class="token cMod">callback</span><span class="token cBase">(</span><span class="token cBase">)</span><span class="token cBase">;</span>
-<span class="token cComment">//some more lines of code; - will be executed</span></code></pre><p>Of course returning will help the context calling async function get the value returned by callback.</p><pre><code><span class="token cVar">function</span> <span class="token cMod">do2</span><span class="token cBase">(</span><span class="token parameter">callback</span><span class="token cBase">)</span> <span class="token cBase">{</span>
-    log<span class="token cBase">.</span><span class="token cMod">trace</span><span class="token cBase">(</span><span class="token cString">'Execute function: do2'</span><span class="token cBase">)</span><span class="token cBase">;</span>
-    <span class="token cVar">return</span> <span class="token cMod">callback</span><span class="token cBase">(</span><span class="token cString">'do2 callback param'</span><span class="token cBase">)</span><span class="token cBase">;</span>
-<span class="token cBase">}</span>
+<div>
+<p align="center">
+<a href="https://devinterview.io/questions/web-and-mobile-development/">
+<img src="https://firebasestorage.googleapis.com/v0/b/dev-stack-app.appspot.com/o/github-blog-img%2Fweb-and-mobile-development-github-img.jpg?alt=media&token=1b5eeecc-c9fb-49f5-9e03-50cf2e309555" alt="web-and-mobile-development" width="100%">
+</a>
+</p>
 
-<span class="token cVar">var</span> do2Result <span class="token cBase">=</span> <span class="token cMod">do2</span><span class="token cBase">(</span><span class="token cBase">(</span><span class="token parameter">param</span><span class="token cBase">)</span> <span class="token cBase">=&gt;</span> <span class="token cBase">{</span>
-    log<span class="token cBase">.</span><span class="token cMod">trace</span><span class="token cBase">(</span><span class="token template-string"><span class="token template-punctuation cString">`</span><span class="token cString">print </span><span class="token interpolation"><span class="token interpolation-punctuation cBase">${</span>param<span class="token interpolation-punctuation cBase">}</span></span><span class="token template-punctuation cString">`</span></span><span class="token cBase">)</span><span class="token cBase">;</span>
-    <span class="token cVar">return</span> <span class="token template-string"><span class="token template-punctuation cString">`</span><span class="token cString">return from callback(</span><span class="token interpolation"><span class="token interpolation-punctuation cBase">${</span>param<span class="token interpolation-punctuation cBase">}</span></span><span class="token cString">)</span><span class="token template-punctuation cString">`</span></span><span class="token cBase">;</span> <span class="token cComment">// we could use that return</span>
-<span class="token cBase">}</span><span class="token cBase">)</span><span class="token cBase">;</span>
+#### You can also find all 100 answers here 👉 [Devinterview.io - Node.js](https://devinterview.io/questions/web-and-mobile-development/node-interview-questions)
 
-log<span class="token cBase">.</span><span class="token cMod">trace</span><span class="token cBase">(</span><span class="token template-string"><span class="token template-punctuation cString">`</span><span class="token cString">print </span><span class="token interpolation"><span class="token interpolation-punctuation cBase">${</span>do2Result<span class="token interpolation-punctuation cBase">}</span></span><span class="token template-punctuation cString">`</span></span><span class="token cBase">)</span><span class="token cBase">;</span></code></pre><p>Output:</p><pre><code>C:\Work\Node&gt;node --use-strict main.js
-[0] Execute function: do2
-[0] print do2 callback param
-[0] print return from callback(do2 callback param)</code></pre></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://stackoverflow.com/questions/43075181/nodejs-what-is-the-difference-between-return-callback-and-just-callback" rel="noreferrer" target="_blank" title="What is the difference between returning a callback and just calling a callback? Interview Questions Source To Answer">stackoverflow.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 19. List out the differences between AngularJS and NodeJS?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p>AngularJS is a web application development framework. It’s a JavaScript and it is different from other web app frameworks written in JavaScript like jQuery. NodeJS is a runtime environment used for building server-side applications while AngularJS is a JavaScript framework mainly useful in building/developing client-side part of applications which run inside a web browser.</p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="http://a4academics.com/interview-questions/79-web/802-nodejs-interview?showall=&amp;start=2" rel="noreferrer" target="_blank" title=" List out the differences between AngularJS and NodeJS? Interview Questions Source To Answer">a4academics.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 20. Is Node a single threaded application?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p>Yes! Node uses a single threaded model with event looping.</p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="http://www.tutorialspoint.com/nodejs/nodejs_interview_questions.htm" rel="noreferrer" target="_blank" title="Is Node a single threaded application? Interview Questions Source To Answer">tutorialspoint.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 21. What's the difference between operational and programmer errors?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p>Operation errors are not bugs, but problems with the system, like <em>request timeout</em> or <em>hardware failure</em>. On the other hand programmer errors are actual bugs.</p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://blog.risingstack.com/node-js-interview-questions/" rel="noreferrer" target="_blank" title="What's the difference between operational and programmer errors? Interview Questions Source To Answer">blog.risingstack.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 22. How you can monitor a file for modifications in Node.js ?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p>We can take advantage of File System <code>watch()</code> function which watches the changes of the file.</p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://www.codingdefined.com/2017/04/top-20-interview-questions-on-nodejs.html" rel="noreferrer" target="_blank" title=" How you can monitor a file for modifications in Node.js ? Interview Questions Source To Answer">codingdefined.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 23. How to make Post request in Node.js?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p>Following code snippet can be used to make a Post Request in Node.js.</p><pre><code><span class="token cVar">var</span> request <span class="token cBase">=</span> <span class="token cMod">require</span><span class="token cBase">(</span><span class="token cString">'request'</span><span class="token cBase">)</span><span class="token cBase">;</span>
-request<span class="token cBase">.</span><span class="token cMod">post</span><span class="token cBase">(</span><span class="token cString">'http://www.example.com/action'</span><span class="token cBase">,</span> <span class="token cBase">{</span>
-  form<span class="token cBase">:</span> <span class="token cBase">{</span>
-    key<span class="token cBase">:</span> <span class="token cString">'value'</span>
-  <span class="token cBase">}</span>
-<span class="token cBase">}</span><span class="token cBase">,</span> <span class="token cVar">function</span><span class="token cBase">(</span><span class="token parameter">error<span class="token cBase">,</span> response<span class="token cBase">,</span> body</span><span class="token cBase">)</span> <span class="token cBase">{</span>
-  <span class="token cVar">if</span> <span class="token cBase">(</span><span class="token cBase">!</span>error <span class="token cBase">&amp;&amp;</span> response<span class="token cBase">.</span>statusCode <span class="token cBase">==</span> <span class="token cNum">200</span><span class="token cBase">)</span> <span class="token cBase">{</span>
-    console<span class="token cBase">.</span><span class="token cMod">log</span><span class="token cBase">(</span>body<span class="token cBase">)</span>
-  <span class="token cBase">}</span>
-<span class="token cBase">}</span><span class="token cBase">)</span><span class="token cBase">;</span></code></pre></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="http://www.techbeamers.com/top-30-node-js-interview-questions-answers/" rel="noreferrer" target="_blank" title="How to make Post request in Node.js? Interview Questions Source To Answer">techbeamers.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 24. What is Callback?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p><strong>Callback</strong> is an asynchronous equivalent for a function. A callback function is called at the completion of a given task. Node makes heavy use of callbacks. All APIs of Node are written is such a way that they supports callbacks. </p><p>For example, a function to read a file may start reading file and return the control to execution environment immediately so that next instruction can be executed. Once file I/O is complete, it will call the callback function while passing the callback function, the content of the file as parameter. So there is no blocking or wait for File I/O. </p><p>This makes Node.js highly scalable, as it can process high number of request without waiting for any function to return result.</p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="http://www.tutorialspoint.com/nodejs/nodejs_interview_questions.htm" rel="noreferrer" target="_blank" title="What is Callback? Interview Questions Source To Answer">tutorialspoint.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 25. What is Chaining in Node?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p><strong>Chanining</strong> is a mechanism to connect output of one stream to another stream and create a chain of multiple stream operations. It is normally used with piping operations.</p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="http://www.tutorialspoint.com/nodejs/nodejs_interview_questions.htm" rel="noreferrer" target="_blank" title="What is Chaining in Node? Interview Questions Source To Answer">tutorialspoint.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 26. What are the global objects of Node.js?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p>These objects are available in all modules:</p><ul><li><strong>process</strong> - The process object is a global that provides information about, and control over, the current Node.js process. </li><li><strong>console</strong> - Used to print to stdout and stderr. </li><li><strong>buffer</strong> - Used to handle binary data. </li></ul></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://github.com/jimuyouyou/node-interview-questions" rel="noreferrer" target="_blank" title="What are the global objects of Node.js? Interview Questions Source To Answer">github.com/jimuyouyou</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 27. How to use Buffer in Node.js?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p>Buffer is used to process binary data, such as pictures, mp3, database files, etc. Buffer supports a variety of encoding and decoding, binary string conversion.</p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://github.com/jimuyouyou/node-interview-questions" rel="noreferrer" target="_blank" title="How to use Buffer in Node.js? Interview Questions Source To Answer">github.com/jimuyouyou</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 28. How can you avoid callback hells?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p>To do so you have more options:</p><ul><li><strong>modularization</strong>: break callbacks into independent functions</li><li>use <em>Promises</em></li><li>use <code>yield</code> with <em>Generators</em> and/or <em>Promises</em></li></ul></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="http://www.tutorialspoint.com/nodejs/nodejs_interview_questions.htm" rel="noreferrer" target="_blank" title="How can you avoid callback hells? Interview Questions Source To Answer">tutorialspoint.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 29. What is N-API in Node.js?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p><strong>N-API</strong> (pronounced N as in the letter, followed by API) is an API for building native Addons. It is independent from the underlying JavaScript runtime (ex V8) and is maintained as part of Node.js itself. This API will be Application Binary Interface (ABI) stable across versions of Node.js. It is intended to insulate Addons from changes in the underlying JavaScript engine and allow modules compiled for one version to run on later versions of Node.js without recompilation.</p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://medium.com/@atulanand94/beginners-guide-to-writing-nodejs-addons-using-c-and-n-api-node-addon-api-9b3b718a9a7f" rel="noreferrer" target="_blank" title="What is N-API in Node.js? Interview Questions Source To Answer">medium.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 30. Are you familiar with differences between Node.js nodules and ES6 nodules?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p>The modules used in Node.js follow a module specification known as the <strong>CommonJS</strong> specification. The recent updates to the JavaScript programming language, in the form of ES6, specify changes to the language, adding things like new class syntax and a module system. This module system is different from Node.js modules. To import ES6 module, we'd use the ES6 <code>import</code> functionality.</p><p>Now ES6 modules are incompatible with Node.js modules. This has to do with the way modules are loaded differently between the two formats. If you use a compiler like Babel, you can mix and match module formats.</p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://stackoverflow.com/questions/42684177/node-js-es6-classes-with-require" rel="noreferrer" target="_blank" title="Are you familiar with differences between Node.js nodules and ES6 nodules? Interview Questions Source To Answer">stackoverflow.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 31. What is the purpose of setTimeout function?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 32. How do you debug Node.js applications?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 33. What is purpose of Buffer class in Node?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 34. How Node prevents blocking code?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 35. What's the event loop?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 36. How to avoid callback hell in Node.js?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 37. Explain how does Node.js work?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 38. How does Node.js handle child threads?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 39. What is the relationship between Node.js and V8?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 40. Explain the concept of Domain in Node.js</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 41. What is REPL in context of Node?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 42. What is stream and what are types of streams available in Node.js?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 43. What are streams?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 44. What is Event Loop?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 45. What is Event Emmitter?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 46. What is the preferred method of resolving unhandled exceptions in Node.js?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 47. What is a blocking code?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 48. When should we use Node.js?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 49. When should I use EventEmitter?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 50. What is difference between synchronous and asynchronous method of fs module?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 51. What are the use cases for the Node.js "vm" core module?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 52. Rewrite promise-based Node.js applications to Async/Await</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 53. How to gracefully Shutdown Node.js Server?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 54. Why to use Buffers instead of binary strings to handle binary data ?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 55. How can you listen on port 80 with Node?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 56. How the V8 engine works?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 57. Does Node.js support multi-core platforms? And is it capable of utilizing all the cores?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 58. Is it possible to use "Class" in Node.js?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 59. What is LTS releases of Node.js why should you care?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 60. Is Node.js entirely based on a single-thread?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 61. When to not use Node.js?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 62. What is Piping in Node?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 63. What is the purpose of __filename variable?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 64. What's the difference between dependencies, devDependencies and peerDependencies in npm package.json file?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 65. How would you handle errors for async code in Node.js?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 66. Can Node.js work without V8?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 67. What are async functions in Node? Provide some examples.</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 68. What are the timing features of Node.js?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 69. Explain usage of NODE_ENV</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 70. What's a stub? Name a use case.</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 71. Name some of the events fired by streams.</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 72. Is Node.js entirely based on a single-thread?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 73. What tools can be used to assure consistent code style?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 74. How does the cluster module work? What’s the difference between it and a load balancer?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 75. How does libuv work under the hood?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 76. Explain what is Reactor Pattern in Node.js?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 77. Can Node.js use other engines than V8?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 78. Why Node.js devs tend to lean towards the Module Requiring vs Dependency Injection?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 79. How to solve "Process out of Memory Exception" in Node.js ?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 80. How would you scale Node application?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 81. What is the difference between process.nextTick() and setImmediate() ?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 82. Explain some Error Handling approaches in Node.js you know about. Which one will you use?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 83. What is the purpose of using hidden classes in V8?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 84. Why do we need C++ Addons in Node.js?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 85. Why should you separate Express 'app' and 'server'?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 86. What is V8 Templates?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 87. How V8 compiles JavaScript code?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 88. How many threads does Node actually create?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 89. Provide some example of config file separation for dev and prod environments</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 90. How do you convert an existing callback API to promises?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 91. Consider following code snippet</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 92. Explain the result of this code execution</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 93. Rewrite the code sample without try/catch block</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 94. What will happen when that code will be executed?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 95. Explain the result of this code execution</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/dev/nodejs-interview-questions">all 95 answers</a></div> <br><br></div> <div data-v-5e9078c0="" class="end"></div> <br data-v-5e9078c0="">
-    Thanks 🙌 for reading and good luck on your next tech interview!
-    <br data-v-5e9078c0="">
-    Explore 3800+ dev interview question here 👉
-    <a data-v-5e9078c0="" href="https://devinterview.io/">Devinterview.io</a></div>
+<br>
+
+## 1. What is Node.js and why is it used?
+
+**Node.js** is an open-source, cross-platform JavaScript runtime environment that executes code outside of a web browser. It is built on V8, the same JavaScript engine within Chrome, and optimized for high performance. This environment, coupled with an event-driven, non-blocking I/O framework, is tailored for server-side web development and more.
+
+### Key Features
+
+- **Asynchronous & Non-Blocking**: Ideal for handling a myriad of concurrent connections with efficiency.
+- **V8 Engine**: Powered by Google's V8, Node.js boasts top-tier JavaScript execution.
+- **Libuv Library**: Ensures consistent performance across platforms and assists in managing I/O operations.
+- **NPM**: A vast package ecosystem simplifies module management and deployment.
+- **Full-Stack JavaScript**: Allows for unified server and client-side code in JavaScript.
+
+### Use Cases
+
+- **Data Streaming**: Suited for real-time streaming of audio, video, and lightweight data.
+- **API Servers**: Ideal for building fast, scalable, and data-intensive applications.
+- **Microservices**: Its module-oriented design facilitates the development of decoupled, independently scalable services.
+- **Single Page Applications**: Often used with frameworks like Angular, React, or Vue to craft robust, server-side backends.
+- **Chat Applications**: Its real-time capabilities are advantageous in building instant messaging systems.
+- **Internet of Things (IoT)**: Provides a lightweight environment for running applications on constrained devices like Raspberry Pi.
+
+### Why Node.js?
+
+- **Unified Language**: Utilizing JavaScript both on the frontend and backend brings coherence to development efforts, potentially reducing debugging time and enabling shared libraries.
+- **NPM Ecosystem**: The NPM repository offers myriad open-source packages, empowering rapid development and feature expansion.
+- **Rapid Prototyping**: Express, a minimalist web framework for Node.js, and NPM's wealth of modules expedite early application development and testing.
+- **Scalability**: Cluster modules, load balancers, and Microservice Architecture aid in linear, on-demand scaling for both simple and intricate applications.
+- **Real-Time Power**: With built-in WebSockets and event-based architecture, Node.js excels in constructing real-time applications such as multiplayer games, stock trading platforms, and chat applications.
+- **Open Source**: Being an open-source technology, Node.js continuously benefits from community contributions, updates, and enhanced packages.
+<br>
+
+## 2. How does Node.js handle child threads?
+
+**Node.js** employs event-driven architecture and non-blocking I/O for efficiency.
+
+While Node.js **operates off a single main thread**, it can harness the full power of multi-core systems by launching child threads for specific tasks, such as file compression or image processing.
+
+### Thread Pool and Worker Threads
+
+To manage these child threads, Node.js uses a combination of:
+- A **thread pool**, powered by the libuv library.
+- **Worker threads** for dedicated, offloaded computation.
+
+### Node.js Event Loop
+
+When a task in Node.js is designated to operate on a child thread, the main event loop hands it over to the thread pool. This setup allows Node.js to **stay responsive to incoming requests**, benefiting from asynchronous I/O.
+
+The main event loop regains control once the task on the child thread is completed, and results are ready.
+
+### Advantages
+
+- **Boosted Efficiency**: Offloading certain tasks to worker threads prevents I/O or computation-heavy jobs from blocking the event loop.
+- **Convenient Multi-Threading**: Node.js enables multi-threading without the complexities of managing threads directly.
+
+### Code Example: Basic Multi-Threading Task
+
+Here is the JavaScript code:
+
+```javascript
+// Import the built-in 'worker_threads' module
+const { Worker, isMainThread, parentPort } = require('worker_threads');
+
+// Check if it's the main module
+if (isMainThread) {
+  // Create a new child worker
+  const worker = new Worker(__filename);
+
+  // Listen for messages from the worker
+  worker.on('message', message => console.log('Received:', message));
+
+  // Send a message to the worker
+  worker.postMessage('Hello from the main thread!');
+} else {
+  // Listen for messages from the main thread
+  parentPort.on('message', message => {
+    console.log('Received in the worker:', message);
+    // Send a message back to the main thread
+    parentPort.postMessage('Hello from the worker thread!');
+  });
+}
+```
+<br>
+
+## 3. Describe the event-driven programming in Node.js.
+
+**Event-driven programming,** a hallmark of Node.js, uses an **event, listener,** and **emitter** architecture to handle asynchronous tasks. This design centers around events and how they trigger actions in the attached listeners.
+
+### Core Components
+
+- **Event Emitter**: Acts as the event registry and dispatcher, letting objects register interest in particular events and emit these events when they occur.
+  
+- **Event Handler (Listener)**: Associates with a particular event through registration. These callback functions will be asynchronously carried out when a matching event is emitted.
+
+#### Code Example: Event Emitter and Handlers
+
+Here is the Node.js code:
+
+```javascript
+const { EventEmitter } = require('events');
+const emitter = new EventEmitter();
+
+emitter.on('event-name', (eventArgs) => {
+    console.log(`Event-name was emitted with arguments: ${eventArgs}`);
+});
+
+emitter.emit('event-name', 'Some Payload');
+```
+
+In this code, when `emit` is called, the `on` method's callback is executed asynchronously.
+
+### Event Loop Mechanism in Node.js
+
+- **Call Stack**: Maintains the call order of the functions and methods being executed.
+
+- **Node APIs** and **Callbacks Queue**: Handle I/O tasks and timers.
+
+- **Event Loop**: Constantly watches the execution stack and checks whether it's clear to execute pending tasks from the Callback Queue.
+
+### Practical Applications in Node.js
+
+- **HTTP Server**: Listens for and serves requests.
+  
+- **File System Operations**: Execute I/O tasks.
+
+- **Database Operations**: Such as data retrieval.
+<br>
+
+## 4. What is the event loop in Node.js?
+
+The **event loop** is a fundamental concept in Node.js for managing asynchronous operations. Its efficiency is a key reason behind Node.js's high performance.
+
+### How Does the Event Loop Work?
+
+1. **Initialization**: When Node.js starts, it initializes the **event loop** to watch for I/O operations and other asynchronous tasks.
+
+2. **Queueing**: Any task or I/O operation is added to a **queue**, which can be either the `microtask queue` or the `macrotask/Callback queue`.
+
+3. **Polling**: The event loop iteratively checks for tasks in the queue while also **waiting** for I/O and timers.
+
+4. **Execution Phases**: When the event loop detects tasks in the queue, it executes them in specific phases, ensuring order efficiency.
+
+### Task Scheduler Zones: microtask and Callback Queue
+
+- **Microtask Queue**: This is a highly prioritized queue, usually acting over tasks in the **Callback Queue**. Useful for tasks that require immediate attention.
+- **Callback Queue (Macrotask Queue)**: Also known as the 'Task Queue,' it manages events and I/O operations.
+
+### Event Loop Phases
+
+- **Timers**: Manages timer events for scheduled tasks.
+- **Pending callbacks**: Handles system events such as I/O, which are typically queued by the kernel.
+- **Idle / prepare**: Ensures internal actions are managed before I/O events handling.
+- **Poll**: Retrieves New I/O events.
+- **Check**: Executes 'setImmediate' functions.
+- **Close**: Handles close events, such as 'socket.close'.
+
+### Task Scheduling: microtasks and macrotasks
+
+- **Microtasks (process.nextTick and Promises)**: Executed after each task.
+- **Macrotasks**: Executed after the poll phase when the event loop is not behind any file I/O or scheduled time. This includes timers, setImmediate, and I/O events.
+
+### Code Example: Timers and Task Queues
+
+Here is the JavaScript code:
+
+**Node.js**
+
+```js
+// Code Example
+console.log('Start');
+
+setTimeout(() => {  
+  console.log('Set Timeout - 1');
+  
+  Promise.resolve().then(() => {
+    console.log('Promise - 1');
+  }).then(() => {
+    console.log('Promise - 2');
+  });
+
+}, 0);
+
+setImmediate(() => {
+  console.log('Set Immediate');
+});
+
+process.nextTick(() => {
+  console.log('Next Tick');
+  // It's like an infinite loop point for microtask queue
+  process.nextTick(() => console.log('Next Tick - nested'));
+});
+
+fs.readFile(file, 'utf-8', (err, data) => {
+  if (err) throw err;
+  console.log('File Read');
+});
+
+console.log('End');
+```
+<br>
+
+## 5. What is the difference between Node.js and traditional web server technologies?
+
+**Node.js** revolutionized server-side development with its non-blocking, event-driven architecture. Let's look at how it differs from traditional web servers and how it leverages a **Single Input-Output (I/O)** model.
+
+### Key Distinctions
+
+#### Multi-threading (Traditional Servers) vs. Event Loop (Node.js)
+
+- **Traditional Servers**: Employ multi-threading. Each client request spawns a new thread, requiring resources even when idle.
+- **Node.js**: Utilizes a single-thread with non-blocking, asynchronous functions for I/O tasks. This makes it exceptionally suitable for scenarios like real-time updates and microservices.
+
+#### Blocking vs. Non-blocking I/O
+
+- **Traditional Servers**: Primarily rely on blocking I/O, meaning that the server waits for each I/O operation to finish before moving on to the next task.
+- **Node.js**: Leverages non-blocking I/O, allowing the server to continue handling other tasks while waiting for I/O operations. Callbacks, Promises, and async/await support this approach.
+
+#### Language Consistency
+
+- **Traditional Servers**: Often pair with languages like Java, C#, or PHP for server-side logic. Front-end developers might need to be proficient in both the server language and client-side technologies like JavaScript.
+- **Node.js**: Employs JavaScript both client-side and server-side, fostering full-stack developer coherence and code reusability.
+
+#### Code Execution
+
+- **Traditional Servers**: Generally compile and execute code. Alterations might necessitate recompilation and possible downtime.
+- **Node.js**: Facilitates a "write, save, and run" approach, without the need for recompilation.
+
+#### Package Management
+
+- **Traditional Servers**: Rely on package managers like Maven or NuGet, with each language typically having its own package dependency system.
+- **Node.js**: Centralizes dependency management via npm, simplifying the sharing and integration of libraries.
+
+#### Deployment
+
+- **Traditional Servers**: Often necessitate coordination with systems, database administrators, and IT teams for deployment.
+- **Node.js**: Offers flexible, straightforward deployments. It's especially suited for cloud-native applications.
+
+### Use Cases
+
+- **Traditional Servers**: Ideal for enterprise systems, legacy applications, or when extensive computational tasks are required.
+- **Node.js**: Well-suited for data-intensive, real-time applications like collaborative tools, gaming, or social media platforms. Its lightweight, scalable nature also complements cloud deployments.
+<br>
+
+## 6. Explain what "non-blocking" means in Node.js.
+
+**Node.js leverages non-blocking I/O** to handle multiple operations without waiting for each to complete separately.
+
+This particular I/O model, coupled with the event-driven paradigm of Node.js, is key to its high performance and scalability, making it **ideal** for tasks such as data streaming, background tasks, and concurrent operations.
+
+### Non-Blocking I/O
+
+With non-blocking I/O, an application **doesn't halt** or wait for a resource to become available. Instead, it goes on executing other tasks that don't depend on that resource.
+
+For instance, if a file operation is in progress, Node.js doesn't pause the entire application until the file is read or written. This allows for a more responsive and efficient system, especially when handling multiple, concurrent I/O operations.
+
+### Event Loop
+
+Node.js constantly monitors tasks and I/O operations. When a task or operation is ready, it triggers an event. This mechanism is referred to as the **event loop**.
+
+When an event fires, a corresponding event handler or callback function is executed.
+
+### Concurrency Without Threads
+
+Traditionally, concurrency can be achieved in languages that support multithreading (e.g., Java). However, managing and coordinating multiple threads can be challenging and is a common source of bugs.
+
+Node.js, on the other hand, provides a simplified yet effective concurrency model using non-blocking I/O and the event loop. It achieves parallelism through mechanisms such as **callbacks**, **Promises**, and **async/await**.
+
+By not using threads, Node.js eliminates many of the complexities associated with traditional multithreaded architectures, making it easier to **develop** and **maintain** applications, particularly those requiring high concurrency.
+
+### Code Example: File I/O
+
+Here is the JavaScript code:
+
+```javascript
+const fs = require('fs');
+
+// Perform non-blocking file read operation
+fs.readFile('path/to/file', (err, data) => {
+    if (err) throw err;
+    console.log(data);
+});
+
+// Other non-blocking operations continue without waiting for file read
+console.log('This message is displayed immediately.');
+```
+
+In this example, the file read operation is non-blocking. Node.js does not halt the thread of execution to wait for the file read to complete. Instead, the supplied callback function is invoked when the read operation finishes.
+<br>
+
+## 7. How do you update Node.js to the latest version?
+
+Regular updates ensure that your **Node.js** setup is secure, efficient, and equipped with the latest features. Here's how to keep it up-to-date.
+
+### Using Package Managers
+
+- **NPM**: Run the following commands to find and install the latest stable version of Node.js:
+
+  ```shell
+  npm cache clean -f
+  ```
+  ```shell
+  npm install -g n
+  ```
+
+- **Yarn**: Execute the following command that fetches the latest version and updates Node.js in your system:
+
+  ```shell
+  yarn global add n
+  ```
+
+### Using the Official Installer
+
+You can use the official installer to upgrade to the latest stable version.
+
+### Version Management Tools
+
+Tools like **nvm** (Node Version Manager), **n** (Node Version Manager) and **nvs** (Node Version Switcher) can be convenient for managing multiple Node.js versions and performing updates.
+
+### Windows via Scoop
+
+On Windows, **Scoop** simplifies the task of updating:
+
+```shell
+scoop update nodejs-lts
+```
+
+### Check the Updated Version
+
+Verify that the update was successful by checking the version number:
+
+```shell
+node -v
+```
+<br>
+
+## 8. What is "npm" and what is it used for?
+
+**npm (Node Package Manager)** is a powerful and highly popular package manager that is focused on the Node.js environment. Its primary purpose is to simplify the installation, management, and sharing of libraries or tools written in Node.js.
+
+npm is more than just a package manager: It's also a thriving ecosystem, offering a plethora of ready-to-use modules and tools, thereby making the development workflow for Node.js even more efficient.
+
+### Key Functions
+
+- **Package Installation**: npm makes it easy to install and specify dependencies for Node.js applications. Developers can simply define required packages in a `package.json` file, and npm resolves and installs all dependencies.
+
+- **Dependency Management**: npm establishes a tiered dependency system, effectively managing the versions and interdependencies of various packages.
+
+- **Registry Access**: It acts as a central repository for Node.js packages, where developers can host, discover, and access modules.
+
+- **Version Control**: npm enables version control to ensure consistent and predictable package installations. It supports features such as semantic versioning and lock files.
+
+- **Lifecycle Scripts**: It allows developers to define custom scripts for tasks like application start or build, making it convenient to execute routine operations.
+
+- **Packaging and Publication**: Developers can use npm to bundle their applications and publish them, ready for use by others.
+
+### npm Client and Registry
+
+- The **npm client** is the command-line tool that developers interact with locally. It provides a set of commands to manage a project's packages, scripts, and configuration.
+
+- The **npm registry** is a global, central database of published Node.js packages. It's where modules and libraries are made available to the Node.js community. The official, public registry is managed by npm, Inc.
+
+### npm vs yarn
+
+- **yarn** is another popular package manager, introduced by Facebook. Like npm, it's designed for Node.js and excels in areas like performance and determinism. However, both npm and yarn are continuously evolving, and their differences are becoming more nuanced.
+
+### Famous Commands
+
+- **install**: This command downloads and installs the specified packages and their dependencies.
+- **init**: This command initializes a `package.json` file for the project.
+- **start**: This command typically begins the execution of a Node.js application, as specified in the `scripts` section of `package.json`.
+- **publish**: This command is used to publish the package to the npm registry.
+
+### npm Scripts
+
+One of the key features of npm is the ability to define scripts in the `package.json` file, executing them with the `npm run` command. This allows for automation of tasks such as testing, building, and starting the application.
+
+These scripts have access to a variety of built-in and environment-specific variables, helping you to customize the script's behavior.
+
+For example:
+
+In `package.json`:
+
+```json
+{
+  "scripts": {
+    "start": "node server.js"
+  }
+}
+```
+
+You can then execute:
+
+```sh
+npm start
+```
+
+to start the server.
+
+### npm Web Interface
+
+While most developers interact with npm via the command line, it also offers a web interface called `npmjs.com`. The website allows users to search for packages, view documentation, and explore related modules. It is also where developers publish and manage their packages.
+<br>
+
+## 9. How do you manage packages in a Node.js project?
+
+**Node.js** utilizes **npm** (Node Package Manager) or yarn for **package management**.
+
+### npm vs. Yarn
+
+Both tools create a `node_modules` folder, but they have subtle differences:
+
+- **Yarn's** `yarn.lock` provides deterministic package versions, while npm uses `package-lock.json`.
+- npm uses `npm install` while Yarn uses `yarn add` to install a package.
+
+Yarn also has advanced features like parallel package installations and a lockfile ensuring consistent installations across machines.
+
+### Core npm Commands
+
+- **npm init**: Initializes a new project and creates a `package.json` file.
+- **npm install [package] (-D)**: Installs a package and updates the `package.json` file. The `-D` flag indicates a devDependency.
+- **npm update [package]**: Updates installed packages to their latest versions.
+
+#### Using npm Scripts
+
+The `package.json` can include custom scripts for tasks like testing, building, and deployment, opening up the terminal from the current project directory and running `npm run SCRIPT_NAME`.
+
+#### CLI Examples
+
+- **Install lodash**: `npm install lodash`
+- **Install express and save as a devDependency**: `npm install express --save-dev`
+- **Update all packages**: `npm update`
+<br>
+
+## 10. What is a package.json file?
+
+The **package.json** file in Node.js projects contains valuable information, such as project metadata and dependencies. This file is essential for managing project modules, scripts, and version control and helps ensure the consistency and stability of your project.
+
+### Key Elements
+
+The `package.json` file consists of several essential sections:
+
+1. **Name and Version**: Required elements that identify the project and its version.
+
+2. **Dependencies**: Separated into `dependencies`, `devDependencies`, and `optionalDependencies` which list package dependencies needed for development, production, or as optional features, respectively.
+
+3. **Scripts**: Encompasses a series of custom commands, managed by npm or yarn, that can be executed to perform various tasks.
+
+4. **Git Repository Information**: Optional but helpful for version control.
+
+5. **Project Metadata**: Such as the description and the author-related details.
+
+6. **Peer Dependencies**: A list of dependencies that must be installed alongside the module but are not bundled with it.
+
+7. **Private/Public Status**: Indicates whether the package is publicly available.
+
+### Creating `package.json`
+
+You can **generate** the initial `package.json` file by running `npm init` or `yarn init` in the project directory. This command will guide you through a set of interactive prompts to configure your project.
+
+### Managing Dependencies
+
+#### Adding Packages
+
+To add a package to your project, use `npm install package-name` or `yarn add package-name`. This will also automatically update your `package.json` file.
+
+#### Removing Packages
+
+Remove a package from the project and update the `package.json` file by running `npm uninstall package-name` or `yarn remove package-name`.
+
+### Scripts
+
+The `scripts` section allows you to define **task shortcuts**. Each entry is a command or group of sub-commands that can be invoked via `npm run` or `yarn run`.
+
+For example, the following `scripts` section would enable the executing of `babel src -d lib` by running `npm run build`.
+
+```json
+{
+  "scripts": {
+    "build": "babel src -d lib"
+  }
+}
+```
+
+### Using `package.json` in CI/CD Pipelines
+
+When using services like Travis CI, the `package.json` file is crucial for both setting the project environment and defining any required test steps and deployment commands.
+
+For instance, you might use the `scripts` section to specify the test command:
+
+```json
+{
+  "scripts": {
+    "test": "mocha"
+  }
+}
+```
+
+During the Travis CI build, you can run `npm test` to execute Mocha tests as per the `package.json` configuration.
+
+### Best Practices
+
+- **Regular Updates**: Keep your dependencies up to date, especially any security patches or bug fixes.
+  
+- **Conservative Versioning**: Use `^` for minor upgrades and `~` for patch upgrades to maximize stability and compatibility.
+
+- **Try out 'npm' & 'yarn'**: Both are reliable package managers, so pick one that best suits your workflow.
+<br>
+
+## 11. Describe some of the core modules of Node.js.
+
+**Node.js** offers a host of inbuilt modules that cover diverse functionalities, ranging from file system handling to HTTP server management. These modules expedite development and allow for more streamlined application building.
+
+### Core Modules Overview
+
+#### Major Categories
+
+- **Basic/System Control**: Modules optimized for system interaction, diagnostics, and error handling.
+- **File System Handling**: Offers a range of file operations.
+- **Networking**: Specialized for data communication over various network protocols.
+- **Utility Modules**: Miscellaneous tools for data analysis, task scheduling, etc.
+
+### Key Modules
+
+#### Basic/System Control
+
+- **`os`**: Provides system-related utility functions. Example: `os.freemem()`, `os.totalmem()`.
+- **`util`**: General utility functions primarily used for debugging. Example: `util.inspect()`.
+
+#### File System Handling
+
+- **`fs`**: Offers extensive file system capabilities. Commonly used methods include `fs.readFile()` and `fs.writeFile()`.
+
+#### Networking
+
+- **`http`/`https`**: Implements web server and client. Example: `http.createServer()`.
+- **`net`**: Facilitates low-level networking tasks. Example: `net.createServer()`.
+- **`dgram`**: Delivers UDP Datagram Socket support for messaging.
+
+#### Utility Modules
+
+- **`crypto`**: Encompasses cryptographic operations. Common methods include `crypto.createHash()` and `crypto.createHmac()`.
+- **`zlib`**: Offers data compression capabilities integrated with various modules like `http`.
+- **`stream`**: Facilitates event-based data stream processing.
+
+#### Others
+
+- **`path`**: Aids in file path string manipulation.
+- **`url`**: Parses and formats URL strings, especially beneficial in web applications and server operations.
+
+### Code Example: Using Core Modules
+
+Here is the node.js code:
+
+```js
+const os = require('os');
+const fs = require('fs');
+const http = require('http');
+const path = require('path');
+const url = require('url');
+const zlib = require('zlib');
+
+// Module: os
+console.log('Free memory:', os.freemem());
+console.log('Total memory:', os.totalmem());
+
+// Module: fs
+fs.readFile('input.txt', 'utf8', (err, data) => {
+  if (err) throw err;
+  console.log(data);
+});
+
+// Module: http
+http.createServer((req, res) => {
+  const reqPath = url.parse(req.url).pathname;
+  const file = path.join(__dirname, reqPath);
+
+  const readStream = fs.createReadStream(file);
+  readStream.pipe(zlib.createGzip()).pipe(res);
+}).listen(8080);
+```
+<br>
+
+## 12. How do you create a simple server in Node.js using the HTTP module?
+
+Let's look at how to create a simple server in Node.js using the built-in `http` module.
+
+### Server Setup
+
+First, a few steps are necessary.
+
+1. **Import the Module**: Use `require` to load the `http` module.
+
+2. **Define Callback Function**: For each request, the server will execute a specific callback function. This function takes two parameters:
+
+   - `request`: Represents the HTTP request, from which you can extract any necessary data.
+   - `response`: Use this parameter to define what the server sends back to the client.
+
+3. **Server Initialization**: Use the `http.createServer` method to set up the server and define the callback function.
+
+4. **Listen on a Port**: Use the `.listen` method to specify the port the server should "listen" on, waiting for incoming requests.
+
+
+### Code Example: Server Setup
+
+Here is the Node.js code:
+
+```js
+// Import the http module
+const http = require('http');
+
+// Define the callback function
+const requestListener = (req, res) => {
+  res.writeHead(200);
+  res.end('Hello, World!');
+};
+
+// Server initialization
+const server = http.createServer(requestListener);
+
+// Listen on port 8080
+server.listen(8080);
+```
+
+### Request Handler
+
+The **Request listener** is the main entry to the server. This callback function handles the incoming client request and sends a response back to the client.
+
+The [`req`](https://nodejs.org/api/http.html#http_class_http_incomingmessage) object represents the HTTP request that the server receives. It provides all the details about the request, such as the request URL, request headers, request method, and more.
+
+The `res` object is the server's response to the client. You can use methods on this object, like `res.write()` and `res.end()`, to send data back to the client. In most cases, you'll use `res.end()` to send a response.
+
+### Code Example: Request Listener with More Capabilities
+
+Here is the Node.js code:
+
+```js
+const requestListener = (req, res) => {
+  if(req.url === '/profile') {
+    res.writeHead(200);
+    res.end('Welcome to your profile!');
+  } else {
+    res.writeHead(200);
+    res.end('Hello, World!');
+  }
+};
+```
+
+In this example, we're checking the request URL. If it's `/profile`, the server will respond with a "Welcome!" message; otherwise, it will respond with "Hello, World!".
+
+This server is basic yet powerful. With this foundational understanding, you can extend the server's behavior in numerous ways, such as by serving dynamic content or handling different HTTP methods like `POST` and `PUT`.
+<br>
+
+## 13. Explain the purpose of the File System (fs) module.
+
+The **File System (fs)** module in Node.js facilitates file operations such as reading, writing, and manipulation. It's a core module, meaning it's available without needing 3rd-party installations.
+
+### Key Methods of the `fs` Module
+
+- **Asynchronous Methods**: Ideal for non-blocking file I/O operations. Their function names end with `File`.
+- **Synchronous Methods**: Best suited for simpler scripts and robustness is needed.
+- **File Names**: As a convention, file and folder names in the Node.js `fs` module that correspond to methods end with `Sync` to indicate synchronous operations (e.g., `renameSync`).
+
+### The Synchronous Approach
+
+Though the synchronous file methods can make scripting simpler, their use should be limited in web servers as they can block the event loop, reducing scalability and performance.
+
+Synchronous operations in Node's `fs` module are best avoided in server-side applications that must manage many connections.
+
+### Supported Operations
+
+The `fs` module covers a wide array of file-handling tasks, including:
+
+- **I/O Operations**: Read or write files using streams or high-level functions.
+- **File Metadata**: Obtain attributes such as size or timestamps.
+- **Directories**: Manage folders and the files within them, including sync and async variants for listing.
+- **File Types**: Distinguish between files and directories.
+- **Links**: Create and manage hard or symbolic links.
+- **Permissions and Ownership**: Integrate with operating systems' security systems.
+
+### Code Example: File Reading
+
+Here is the Node.js code:
+
+```javascript
+const fs = require('fs');
+
+// Asynchronous read
+fs.readFile('input.txt', (err, data) => {
+  if (err) {
+    return console.error(err);
+  }
+  console.log('Asynchronous read: ' + data.toString());
+});
+
+// Synchronous read
+const data = fs.readFileSync('input.txt');
+console.log('Synchronous read: ' + data.toString());
+```
+
+In the above code, both asynchronous and synchronous methods are demonstrated for file reading.
+
+### Considerations for the Web
+
+When working with HTTP connections or in web applications, the **synchronous methods may block other requests**. Always favor their asynchronous counterparts, especially in web applications.
+<br>
+
+## 14. What is the Buffer class in Node.js?
+
+In **Node.js**, the `Buffer` class is a core module that provides a way to **read**, **manipulate**, and **allocate** binary data, which primarily represents a sequence of bytes (octets).
+
+### Key Features
+
+- **Backbone of I/O Operations**: Buffers serve as the primary data structure for handling I/O in Node.js, acting as a transient container for data being read from or written to streams and files.
+
+- **Raw Binary Data**: Buffers are used for handling raw binary data, which is particularly useful for tasks like cryptography, network protocols, and WebGL operations.
+
+- **Unmodifiable Size**: Buffers are fixed in size after allocation. To resize a buffer, you'd need to create a new buffer with the necessary size and optionally copy over the original data.
+
+- **Shared Memory**: Buffers provide a mechanism for sharing memory between Node.js instances or between Node.js and C++ Addons, offering enhanced performance in certain scenarios.
+
+### Common Use Cases
+
+- **File and Network Operations**: Buffers are leveraged for reading and writing data from files, sockets, and other sources/sinks.
+
+- **Data Conversion**: For example, converting text to binary data or vice versa using character encodings such as UTF-8.
+
+- **Binary Calculations**: Buffers make binary manipulations more manageable, such as computing checksums or parsing binary file formats.
+
+### Code Example: Buffer Use
+
+Here is the JavaScript code:
+
+```javascript
+let bufTemp = Buffer.from('Hey!');
+console.log(bufTemp.toString()); // Output: Hey!
+
+let bufAlloc = Buffer.alloc(5, 'a');
+console.log(bufAlloc.toString()); // Output: aaaaa
+
+bufAlloc.write('Hello');
+console.log(bufAlloc.toString()); // Output: Hello
+
+let bufSlice = bufAlloc.slice(0, 3);  // Slice the buffer
+console.log(bufSlice.toString());  // Output: Hel
+```
+<br>
+
+## 15. What are streams in Node.js and what types are available?
+
+**Node.js** utilizes **streams** for efficient handling of input/output data, offering two main varieties: readable and writable.
+
+### Categories of Streams
+
+1. **Standard Streams**: Represent standard input, output, and error. These are instances of Readable or Writable streams.
+
+2. **Duplex Streams**: Facilitate both reading and writing. They can be connected to processes or handling pipelines.
+
+3. **Transform Streams**: A special type that acts as an intermediary, modifying the data as it passes through.
+
+### Practical Implementations
+
+- **HTTP Transactions**: HTTP clients use readable and writable streams for sending requests and receiving responses. HTTP servers also apply these streams for similar actions in the opposite direction.
+
+- **File System**: Reading and writing files in Node.js utilizes these streams. For instance, the `fs.createReadStream()` method generates a readable stream whereas `fs.createWriteStream()` creates a writable one.
+
+### Workflows
+
+1. **Standard I/O Streams**: These support interactivity between a program and its running environment. For example, stdout (a writable stream) can be used to display information, and stdin (a readable stream) can capture user input.
+
+2. **File Operations**: Streams are beneficial when working with large files. This is because they streamline the process by breaking it down into smaller, manageable chunks, thereby conserving memory.
+
+3. **Server Operations**: Streams facilitate data transfer for operations such as network requests, database communications, and more.
+
+4. **Pipelines**: Streams can be easily combined using `pipe()` to create powerful, efficient operations called pipelines. For instance, to compress a file and then write it to disk, you can pipe a readable stream to a transform stream and then to a writable stream. This arrangement neatly dictates the flow of data.
+<br>
+
+
+
+#### Explore all 100 answers here 👉 [Devinterview.io - Node.js](https://devinterview.io/questions/web-and-mobile-development/node-interview-questions)
+
+<br>
+
+<a href="https://devinterview.io/questions/web-and-mobile-development/">
+<img src="https://firebasestorage.googleapis.com/v0/b/dev-stack-app.appspot.com/o/github-blog-img%2Fweb-and-mobile-development-github-img.jpg?alt=media&token=1b5eeecc-c9fb-49f5-9e03-50cf2e309555" alt="web-and-mobile-development" width="100%">
+</a>
+</p>
+
