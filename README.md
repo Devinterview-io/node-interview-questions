@@ -10,6 +10,23 @@
 #### You can also find all 100 answers here 👉 [Devinterview.io - Node.js](https://devinterview.io/questions/web-and-mobile-development/node-interview-questions)
 
 <br>
+| **NO**                                            | **Question**                                                           |
+|---------------------------------------------------|------------------------------------------------------------------------|
+| 1                                                 | ## 1. What is Node.js and why is it used?                              | 
+| 2                                                 | ## 2. How does Node.js handle child threads?                           |   
+| 3                                                 | ## 3. Describe the event-driven programming in Node.js.                | 
+| 4                                                 | ## 4. What is the event loop in Node.js?                               |
+| 5                                                 | ## 5. What is the difference between Node.js and traditional web server technologies? |
+| 6                                                 | ## 6. Explain what "non-blocking" means in Node.js.                    |
+| 7                                                 | ## 7. How do you update Node.js to the latest version?                 |
+| 8                                                 | ## 8. What is "npm" and what is it used for?                           |
+| 9                                                 | ## 9. How do you manage packages in a Node.js project?                 | 
+| 10                                                | ## 10. What is a package.json file?                                    |
+| 11                                                | ## 11. Describe some of the core modules of Node.js.                   |
+| 12                                                | ## 12. How do you create a simple server in Node.js using the HTTP module? | 
+| 13                                                | ## 13. Explain the purpose of the File System (fs) module.              |
+| 14                                                | ## 14. What is the Buffer class in Node.js?                             | 
+| 15                                                | ## 15. What are streams in Node.js and what types are available?        |
 
 ## 1. What is Node.js and why is it used?
 
