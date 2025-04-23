@@ -633,7 +633,7 @@ const server = http.createServer(requestListener);
 server.listen(8080);
 ```
 
-### Request Handler
+### Request Listener
 
 The **Request listener** is the main entry to the server. This callback function handles the incoming client request and sends a response back to the client.
 
