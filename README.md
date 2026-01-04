@@ -1,4 +1,4 @@
-# 100 Must-Know Node.js Interview Questions in 2025 in 2026
+# 100 Must-Know Node.js Interview Questions in 2026
 
 <div>
 <p align="center">
